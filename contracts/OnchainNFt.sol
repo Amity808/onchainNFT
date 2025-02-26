@@ -15,6 +15,7 @@ contract OnchainNft is ERC721URIStorage {
     function mintNft(string memory imageURI) public {
         _safeMint(msg.sender, tokenCounter);
         _setTokenURI(tokenCounter, imageURI);
+        tokenCounter++;
     }
 
     function _baseURI() internal pure override returns (string memory) {
