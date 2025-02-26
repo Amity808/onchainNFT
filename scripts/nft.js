@@ -9,6 +9,8 @@ async function main() {
 
     const nftAddress = await onChainNFt.getAddress();
 
+    const contractdeployAddress = "0xD377C8688B7A9DBB62587A994Aa7e2e4aB897D21"
+
     console.log(`Deploy contract to ${nftAddress.toString()}`);
 
     const [owner, otherAccount] = await ethers.getSigners();
