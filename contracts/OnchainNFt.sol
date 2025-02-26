@@ -33,8 +33,8 @@ contract OnchainNft is ERC721URIStorage {
                         abi.encodePacked(
                             '{"name": "', 
                             name(), 
-                            '", "description": "An NFT that reflects the owners mood", ',
-                            '"attributes": [{"trait_type": "moodiness", "value": 100}], ',
+                            '", "description": "An onchain NFT", ',
+                            '"attributes": [{"trait_type": "onchainNft", "value": 100}], ',
                             '"image": "', 
                             imageURI, 
                             '"}'
